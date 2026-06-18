@@ -33,7 +33,7 @@ jobs:
       run: mvn clean install
 
     - name: Build & push Docker image
-      uses: actions/setup-java@v4
+      uses: mr-smithers-excellent/docker-build-push@v7
       with:
         image: genesisdock/springbootrepogithubactions
         tags: latest
